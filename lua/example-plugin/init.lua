@@ -1,7 +1,4 @@
-local M = {}
+local commands = require("example-plugin.commands")
 
-function M.test()
-    print("HELLO WORLD")
-end
 
-return M
+vim.cmd([[command! Hello lua commands.Hello()]])
